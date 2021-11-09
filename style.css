@@ -226,11 +226,6 @@ footer a img:hover {
     brightness(95%) contrast(89%);
 }
 
-.social {
-  /* margin-left: 5rem; */
-  /* padding: 0.5rem 0rem; */
-}
-
 .secondary-nav {
   display: flex;
 }
@@ -276,10 +271,18 @@ footer a img:hover {
     margin-bottom: 3rem;
   }
 
+  footer {
+    padding: 0rem;
+  }
+
   footer .wrapper,
   .three .wrapper,
   .secondary-nav {
     flex-direction: column;
+  }
+
+  footer .wrapper {
+    padding-bottom: 0;
   }
 
   .one .wrapper,
