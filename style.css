@@ -81,7 +81,7 @@ input::placeholder {
   padding: 4rem 4.5rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .wrapper > * {
@@ -227,13 +227,21 @@ footer a img:hover {
 }
 
 .social {
-  margin-left: 2rem;
-  padding: 0.5rem 0rem;
+  /* margin-left: 5rem; */
+  /* padding: 0.5rem 0rem; */
+}
+
+.secondary-nav {
+  display: flex;
+}
+
+.secondary-nav * {
+  width: 100%;
 }
 
 .social img {
   /* border: orangered 1px solid; */
-  margin-left: 1rem;
+  margin-right: 1rem;
   width: 1.75rem;
 }
 
@@ -264,8 +272,13 @@ footer a img:hover {
     width: 100%;
   }
 
+  footer .wrapper > div {
+    margin-bottom: 3rem;
+  }
+
   footer .wrapper,
-  .three .wrapper {
+  .three .wrapper,
+  .secondary-nav {
     flex-direction: column;
   }
 
@@ -343,5 +356,9 @@ footer a img:hover {
     width: 100%;
     max-width: 12rem;
     margin: 0 auto;
+  }
+
+  .secondary-nav div + div {
+    margin-top: 2rem;
   }
 }
